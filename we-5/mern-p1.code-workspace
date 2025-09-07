@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Resume_Project"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

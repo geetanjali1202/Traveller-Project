@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function abc(){
+        //     function xyz(){
+        //         var a = 'hello';
+        //         return a;
+        //     }
+        //     xyz()
+        // }
+        // abc()
+
+
+        // const mno = ()=> {
+        //     console.log('hi')
+        // }
+
+
+        // function abc(a,b){
+        //     return a + b ;
+        // }
+        // console.log(abc(10,20));
+
+        // function outer(){
+        //     function inner(){
+        //         let a=10;
+        //     }
+        //     console.log(a);
+        //     inner()
+        // }
+        // outer()
+
+
+        // function outer(){
+        //     let a = 10;
+        //     function inner(){
+        //         console.log(a);
+        //     }
+        //     return inner;
+        // }
+        // outer();
+
+
+        function outer() {
+                let a = "I'm in the outer scope!";
+                function inner() {
+                    console.log(a);
+                    a = "Updated"
+                }
+                return inner;
+            }
+            const closure = outer();
+            closure();
+            closure();
+
+    </script>
+</body>
+</html>
